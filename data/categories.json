@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Core Java",
+    "description": "Fundamental Java concepts and syntax"
+  },
+  {
+    "id": 2,
+    "name": "OOP",
+    "description": "Object-Oriented Programming principles in Java"
+  },
+  {
+    "id": 3,
+    "name": "Collections",
+    "description": "Java Collections Framework"
+  },
+  {
+    "id": 4,
+    "name": "Exceptions",
+    "description": "Exception handling in Java"
+  },
+  {
+    "id": 5,
+    "name": "Streams",
+    "description": "Java Stream API and functional programming"
+  },
+  {
+    "id": 6,
+    "name": "Multithreading",
+    "description": "Concurrency and multithreading in Java"
+  },
+  {
+    "id": 7,
+    "name": "SOLID principles",
+    "description": "SOLID design principles"
+  },
+  {
+    "id": 8,
+    "name": "REST basics",
+    "description": "RESTful API design principles"
+  },
+  {
+    "id": 9,
+    "name": "SQL basics",
+    "description": "SQL fundamentals for backend developers"
+  },
+  {
+    "id": 10,
+    "name": "Git basics",
+    "description": "Version control with Git"
+  }
+]

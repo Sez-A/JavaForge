@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Forge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaForge</h1>
+            <p>Test your Java and backend knowledge</p>
+        </header>
+
+        <main>
+            <!-- Categories View -->
+            <div id="categoriesView" class="view active">
+                <h2>Select a Category</h2>
+                <div id="categoriesList" class="categories-grid">
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Quiz View -->
+            <div id="quizView" class="view">
+                <div class="quiz-header">
+                    <h2 id="categoryTitle"></h2>
+                    <div class="quiz-controls-top">
+                        <div class="question-count-selector">
+                            <label for="questionCount">Questions:</label>
+                            <select id="questionCount" class="count-select">
+                                <option value="5">5 questions</option>
+                                <option value="10" selected>10 questions</option>
+                                <option value="20">20 questions</option>
+                                <option value="50">50 questions</option>
+                                <option value="all">All questions</option>
+                            </select>
+                        </div>
+                        <div class="quiz-progress">
+                            Question <span id="currentQuestion">1</span> of <span id="totalQuestions">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionContainer" class="question-container">
+                    <!-- Question will be displayed here -->
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="prevBtn" class="btn btn-secondary" disabled>Previous</button>
+                    <button id="nextBtn" class="btn btn-primary">Next</button>
+                    <button id="submitBtn" class="btn btn-success" style="display: none;">Submit Quiz</button>
+                </div>
+            </div>
+
+            <!-- Results View -->
+            <div id="resultsView" class="view">
+                <h2>Quiz Results</h2>
+                <div class="score-container">
+                    <div class="score-circle">
+                        <span id="scorePercentage">0%</span>
+                    </div>
+                    <p id="scoreDetails" class="score-details"></p>
+                </div>
+
+                <div id="explanationsContainer" class="explanations">
+                    <!-- Explanations will be loaded here -->
+                </div>
+
+                <div class="results-controls">
+                    <button id="newQuizBtn" class="btn btn-primary">Try Another Category</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
